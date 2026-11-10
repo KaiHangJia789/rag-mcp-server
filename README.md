@@ -2,7 +2,7 @@
 
 把一个 RAG 知识库通过 [Model Context Protocol](https://modelcontextprotocol.io) 提供给 Claude Desktop、MCP Inspector 等客户端：可以检索文档、按 ID 读取原文，并提供文档清单与预置提示。
 
-本仓库是从 RAG 知识库项目中拆出的 MCP 层，**不能单独运行**：它直接使用主项目的 `app` 包（检索工具、向量索引、PostgreSQL 访问），主项目目前为私有仓库。这里公开代码，用于展示设计与实现；要运行，需要在主项目的目录结构中使用（见下文）。
+本仓库是从 [RAG Knowledge Base](https://github.com/KaiHangJia789/RAG-Knowledge-Base) 项目中拆出的 MCP 层，**不能单独运行**：它直接使用主项目的 `app` 包（检索工具、向量索引、PostgreSQL 访问）。要运行，先克隆主项目，按其 README 构建索引，再在主项目的目录结构中使用（见下文）。
 
 ## 提供的能力
 
